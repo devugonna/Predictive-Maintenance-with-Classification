@@ -5,7 +5,7 @@ Seperate model trained and tuned without feature engineered metrics for comparis
 
 # Overview
 
-Predictive maintenance is used to flag machines with the likelihood of failure, prioritising intelligent predictions that do not take advantage of a seemingly high accuracy obtained when predicting no failure. only 3.4% of rows in the dataset are failure, so the metric that is the most misleading is accuracy, with a 96.6% rate of a model that guesses all failure. 
+Predictive maintenance is used to flag machines with the likelihood of failure, prioritising intelligent predictions that do not take advantage of a seemingly high accuracy obtained when predicting no failure. only 3.4% of rows in the dataset are failure, so the metric that is the most misleading is accuracy, with a 96.6% rate of a model that guesses no failures. 
 - **Missed failure (false negative):** unplanned downtime and possible damage.
 - **False alarm (false positive):** an unnecessary inspection.
 Both these possibilities are detrimental to good resource management, with additional inspections and unplanned damages being costly. Due to this, model baselines are assessed with average precision **(PR-AUC)**.
